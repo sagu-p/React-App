@@ -7,8 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/styles.css';
 
 const App = () => {
-  return <h1>Hello World! CI/CD Pipeline is estblisted.</h1>;
-};
+  return <h2>CI/CD Deployed.</h2>;
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(<App/>);

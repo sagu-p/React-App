@@ -9,7 +9,6 @@
     "watch:test": "mocha --watch --compilers js:babel-register",
     "setup": "npm install && npm run validate",
     "validate": "npm-run-all lint test build",
-    
     "build": "webpack --env.prod",
     "test": "cross-env NODE_ENV=test nyc mocha",
     "start": "http-server"
@@ -29,8 +28,8 @@
     "bootstrap": "^3.3.5",
     "history": "^3.0.0",
     "moment": "^2.10.6",
-    "react": "15.3.0",
-    "react-dom": "15.3.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
     "react-router": "2.6.1",
     "react-tooltip": "3.1.5"
   },
