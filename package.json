@@ -11,18 +11,16 @@
     "validate": "npm-run-all lint test build",
     "build": "webpack --env.prod",
     "test": "cross-env NODE_ENV=test nyc mocha",
-    "start": "http-server"
+    "start": "http-server",
+
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mzabriskie/react-example"
+    "url": "https://github.com/sagu-p/React-App"
   },
-  "author": "Matt Zabriskie",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mzabriskie/react-example/issues"
-  },
-  "homepage": "https://github.com/mzabriskie/react-example",
+  "homepage": "https://github.com/sagu-p/React-App",
   "dependencies": {
     "axios": "0.13.1",
     "bootstrap": "^3.3.5",
@@ -49,6 +47,7 @@
     "eslint": "3.2.2",
     "eslint-config-kentcdodds": "^9.0.2",
     "file-loader": "0.9.0",
+    "gh-pages": "^6.3.0",
     "http-server": "0.9.0",
     "jsdom": "9.4.1",
     "lodash": "4.14.2",
