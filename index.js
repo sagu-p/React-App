@@ -6,10 +6,9 @@ import User from './app/screens/User';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/styles.css';
 
-ReactDOM.render(
-  <Router history={browserHistory}>
-    <Route path="/" component={Home} />
-    <Route path="/:username" component={User} />
-  </Router>,
-  document.getElementById('container')
-);
+const App = () => {
+  return <h1>Hello World! CI/CD Pipeline is estblisted.</h1>;
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
